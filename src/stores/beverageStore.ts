@@ -10,12 +10,7 @@ import db from "../firebase.ts";
 import {
   collection,
   getDocs,
-  setDoc,
-  doc,
   addDoc,
-  QuerySnapshot,
-  QueryDocumentSnapshot,
-  onSnapshot,
 } from "firebase/firestore";
 
 async function addDataToCollection(collectionName: string, data: any) {
