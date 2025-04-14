@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "firebase": "^11.6.0",
-    "pinia": "^3.0.1",
+    "firestore": "^1.1.6",
+    "pinia": "^3.0.2",
     "pinia-plugin-persistedstate": "^4.2.0",
     "vue": "^3.4.19"
   },
