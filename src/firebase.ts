@@ -2,18 +2,13 @@ import { getFirestore } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB4NNc2fQMWmLULTxFzJnvKbiXISf6kzto",
-
-  authDomain: "cis371-ce835.firebaseapp.com",
-
-  projectId: "cis371-ce835",
-
-  storageBucket: "cis371-ce835.firebasestorage.app",
-
-  messagingSenderId: "930770370150",
-
-  appId: "1:930770370150:web:a70754325c02c9e2e7f7a7"
-
+  //   // COPY this from your Firebase Console
+  //   apiKey: "your-api-key-goes-here",
+  //   authDomain: "your-project-name-here.firebaseapp.com",
+  //   databaseURL: "https://your-project-name-here.firebaseio.com",
+  //   projectId: "your-project-name-here",
+  //   storageBucket: "your-project-name.appspot.com",
+  //   messagingSenderId: "xxxxxxxx",
 };
 
 const app = initializeApp(firebaseConfig);

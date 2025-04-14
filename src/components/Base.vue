@@ -1,14 +1,14 @@
 <template>
-  <div :class="['baseBeverage']"></div>
+  <div
+    class="baseBeverage"
+    :style="{ backgroundColor: beverageStore.currentBase?.color }"
+  ></div>
 </template>
 
 <script setup lang="ts">
+import { useBeverageStore } from "../stores/beverageStore";
 
-type Props = {
-  baseClass: string | null;
-};
-defineProps<Props>();
-
+const beverageStore = useBeverageStore();
 </script>
 
 <style scoped>
@@ -19,20 +19,6 @@ defineProps<Props>();
   bottom: 0;
   animation: pour-tea 2s;
   z-index: 300;
-  background-color: v-bind(baseClass);
+  /* // border-radius: 0.05em 0.05em 2.2em 2.2em; */
 }
-
-/*black tea*/
-.b1 {
-  background-color: #8B4513;
-}
-/*green tea*/
-.b2 {
-  background-color: #C8E6C9;
-}
-/*coffee*/
-.b3 {
-  background-color: #6F4E37;
-}
-
 </style>

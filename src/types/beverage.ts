@@ -23,6 +23,5 @@ type BeverageType = {
   base: BaseBeverageType;
   syrup: SyrupType;
   creamer: CreamerType;
-  isIced: boolean;
 };
 export type { BaseBeverageType, CreamerType, SyrupType, BeverageType };
